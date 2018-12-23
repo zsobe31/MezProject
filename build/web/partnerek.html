@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Partnerek</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- BOOTSTRAP 4 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        
+        <!-- SCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        
+        <script src="myScript.js"></script>
+        <script src="muveletek.js"></script>
+        
+        <style>
+            span{
+                display: inline-block;
+                width: 300px;
+                margin: 0 20px;
+                overflow: auto;
+                text-align: justify;
+                border-bottom: 1px solid;
+            }
+        </style>
+        
+    </head>
+    <body onload="partnerP()">
+        
+        <br>
+        <h1 class="text-center">Partnerek</h1>
+        
+        <br>
+            <div id="partner"></div>
+        <br>
+        <h5 class="text-center">Módosítás</h5><br>
+        <div class="text-center">
+            <input id="modosit-id" type="text" placeholder="sorszám">
+            <input id="modosit-nev" type="text" placeholder="név">
+            <input id="modosit-icon" type="text" placeholder="icon url">
+            <input id="modosit-url" type="text" placeholder="web url">
+            <button onclick="modPartner()">módosít</button>
+        </div>
+    </body>
+</html>

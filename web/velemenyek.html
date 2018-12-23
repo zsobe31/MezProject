@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Velemenyek</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- BOOTSTRAP 4 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        
+        <!-- SCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        
+        <script src="myScript.js"></script>
+        <script src="muveletek.js"></script>
+        
+        <style>
+            span{
+                display: inline-block;
+                width: 300px;
+                margin: 0 20px;
+                overflow: auto;
+                text-align: justify;
+                border-bottom: 1px solid;
+            }
+        </style>
+        
+    </head>
+    <body onload="velemenyV()">
+        
+        <br>
+        <h1 class="text-center">Vélemények</h1>
+        
+        <br>
+            <div id="velemeny"></div>
+        <br>
+        <h5 class="text-center">Módosítás</h5><br>
+        <div class="text-center">
+            <input id="modosit-id" type="text" placeholder="sorszám">
+            <input id="modosit-leiras" type="text" placeholder="vélemény">
+            <input id="modosit-szerzo" type="text" placeholder="szerző">
+            <button onclick="modVelemeny()">módosít</button>
+        </div>
+    </body>
+</html>

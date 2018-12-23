@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bemutatkozas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- BOOTSTRAP 4 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        
+        <!-- SCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        
+        <script src="myScript.js"></script>
+        <script src="muveletek.js"></script>
+        
+    </head>
+    <body onload="bemutatkozas()">
+        <br>
+        <table class="border text-center">
+            <tr>
+                <th class="text-center">Sorszám</th>
+                <th class="text-center">Kép url</th>
+                <th class="text-center">Leirás</th>
+            </tr>
+            <tr>
+                <td id="id01" class="border" style="width: 10%"></td>
+                <td id="kep1" class="border" style="width: 30%"></td>
+                <td id="bemutat" class="border" style="width: 60%; text-align: justify"></td>
+            </tr>
+        </table>
+        <br>
+        <h5 class="text-center">Módosítás</h5><br>
+        <div class="text-center">
+            <input id="modosit-id" type="text" placeholder="sorszám">
+            <input id="modosit-kepUrl" type="text" placeholder="kép url">
+            <input id="modosit-leiras" type="text" placeholder="leirás">
+            <button onclick="modBemutat()">módosít</button>
+        </div>
+    </body>
+</html>
